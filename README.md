@@ -15,7 +15,7 @@
 Cloud & DevOps Engineer with over **3 years of experience** in the IT industry, specializing in:
 
 - Automating and maintaining cloud infrastructure  
-- Building robust CI/CD pipelines  
+- Building and maintaining CI/CD pipelines  
 - Ensuring scalable and secure cloud solutions  
 - Working across **Azure** and **AWS** environments
 

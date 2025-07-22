@@ -17,7 +17,6 @@ class PortfolioApp {
         this.setupNavigation();
         this.setupScrollEffects();
         this.setupTypingAnimation();
-        this.setupIntersectionObserver();
         this.setupFormSubmission();
         this.setupSmoothScrolling();
         this.setupParallaxEffects();
@@ -130,92 +129,6 @@ class PortfolioApp {
         };
 
         setTimeout(typeText, 1000);
-    }
-
-    // Intersection Observer for animations
-    setupIntersectionObserver() {
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
-        };
-
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('visible');
-                    this.animateElement(entry.target);
-                }
-            });
-        }, observerOptions);
-
-        // Observe elements for animation
-        const animateElements = document.querySelectorAll(`
-            .about-content,
-            .cert-card,
-            .timeline-item,
-            .contact-content,
-            .skill-item,
-            .stat-card
-        `);
-
-        animateElements.forEach(el => {
-            el.classList.add('fade-in');
-            observer.observe(el);
-        });
-
-        // Counter animation for stats
-        this.setupCounterAnimation();
-    }
-
-    animateElement(element) {
-        // Add stagger animation for grid items
-        if (element.classList.contains('certifications-grid') || 
-            element.classList.contains('skills-grid')) {
-            const items = element.children;
-            Array.from(items).forEach((item, index) => {
-                setTimeout(() => {
-                    item.style.opacity = '1';
-                    item.style.transform = 'translateY(0)';
-                }, index * 100);
-            });
-        }
-    }
-
-    setupCounterAnimation() {
-        const counters = document.querySelectorAll('.stat-number');
-        const observerOptions = {
-            threshold: 0.5
-        };
-
-        const counterObserver = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting && !entry.target.classList.contains('animated')) {
-                    this.animateCounter(entry.target);
-                    entry.target.classList.add('animated');
-                }
-            });
-        }, observerOptions);
-
-        counters.forEach(counter => {
-            counterObserver.observe(counter);
-        });
-    }
-
-    animateCounter(element) {
-        const target = parseInt(element.textContent.replace(/\D/g, ''));
-        const suffix = element.textContent.replace(/\d/g, '');
-        let current = 0;
-        const increment = target / 50;
-        
-        const timer = setInterval(() => {
-            current += increment;
-            if (current >= target) {
-                element.textContent = target + suffix;
-                clearInterval(timer);
-            } else {
-                element.textContent = Math.ceil(current) + suffix;
-            }
-        }, 40);
     }
 
     // Scroll effects

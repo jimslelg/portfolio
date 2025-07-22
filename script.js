@@ -1,9 +1,18 @@
-// Portfolio JavaScript - 2025 Modern Interactive Features
+/**
+ * ========================================
+ * PORTFOLIO JAVASCRIPT - 2025 EDITION
+ * Modern Interactive Portfolio Features
+ * ========================================
+ */
+
 class PortfolioApp {
     constructor() {
         this.init();
     }
 
+    /**
+     * Initialize all portfolio features
+     */
     init() {
         this.setupNavigation();
         this.setupScrollEffects();
@@ -15,7 +24,9 @@ class PortfolioApp {
         this.setupTechStackTabs();
     }
 
-    // Navigation functionality
+    // ========================================
+    // NAVIGATION FUNCTIONALITY
+    // ========================================
     setupNavigation() {
         const hamburger = document.querySelector('.hamburger');
         const navMenu = document.querySelector('.nav-menu');

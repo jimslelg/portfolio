@@ -13,31 +13,40 @@
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500&display=swap" rel="stylesheet">
-    <!-- Font Awesome Icons -->
+    <!-- Font Awesome Ic                    <div class="terminal-header">
+                        <div class="terminal-controls">
+                            <span class="control close"></span>
+                            <span class="control minimize"></span>
+                            <span class="control maximize"></span>
+                        </div>
+                        <span class="terminal-title">message-composer.sh</span>
+                    </div>s -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
 </head>
 
 <body>
-    <nav class="navbar">
+    <nav class="navbar" style="font-family: 'Fira Code', monospace; background-color: #1e1e1e !important; color: #d4d4d4;">
         <div class="nav-container">
-            <div class="nav-logo">
-                <span class="code-bracket">&lt;</span>jimDev<span class="code-bracket">/ops&gt;</span>
+            <div class="nav-logo" style="display: flex; align-items: center;">
+                <span class="code-bracket" style="color: #569cd6;">&lt;</span>
+                <span style="color: #ffffff;">jimDev</span>
+                <span class="code-bracket" style="color: #569cd6;">/ops&gt;</span>
             </div>
             
-            <div class="nav-menu">
-                <a href="#home" class="nav-link">Home</a>
-                <a href="#techstack" class="nav-link">Tech Stack</a>
-                <a href="#about" class="nav-link">About</a>
-                <a href="#certifications" class="nav-link">Certifications</a>
-                <a href="#experience" class="nav-link">Experience</a>
-                <a href="#contact" class="nav-link">Contact</a>
+            <div class="nav-menu" style="display: flex; gap: 1rem;">
+                <a href="#home" class="nav-link" style="color: #9cdcfe; text-decoration: none;">home</a>
+                <a href="#about" class="nav-link" style="color: #9cdcfe; text-decoration: none;">about</a>
+                <a href="#techstack" class="nav-link" style="color: #9cdcfe; text-decoration: none;">techStack</a>
+                <a href="#experience" class="nav-link" style="color: #9cdcfe; text-decoration: none;">experience</a>
+                <a href="#certifications" class="nav-link" style="color: #9cdcfe; text-decoration: none;">certifications</a>
+                <a href="#contact" class="nav-link" style="color: #9cdcfe; text-decoration: none;">contact</a>
             </div>
             
             <!-- Mobile Menu Toggle -->
-            <div class="hamburger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
+            <div class="hamburger" style="display: none;">
+                <span class="bar" style="background-color: #d4d4d4;"></span>
+                <span class="bar" style="background-color: #d4d4d4;"></span>
+                <span class="bar" style="background-color: #d4d4d4;"></span>
             </div>
         </div>
     </nav>
@@ -46,7 +55,7 @@
          HERO SECTION
     ======================================== -->
     <section id="home" class="hero">
-        <div class="hero-container">
+        <div class="hero-container" style="font-family: 'Fira Code', monospace;">
             <div class="hero-content">
                 <!-- Hero Text Content -->
                 <div class="hero-text">
@@ -59,13 +68,12 @@
                     </p>
                     
                     <!-- Call to Action Buttons -->
-                    <!-- Call to Action Buttons -->
                     <div class="hero-buttons">
-                        <a href="#about" class="btn btn-primary">
+                        <a href="#about" class="btn btn-primary" style="font-family: 'Fira Code', monospace;">
                             <i class="fas fa-user"></i>
                             Learn More
                         </a>
-                        <a href="#contact" class="btn btn-secondary">
+                        <a href="#contact" class="btn btn-secondary" style="font-family: 'Fira Code', monospace;">
                             <i class="fas fa-envelope"></i>
                             Get In Touch
                         </a>
@@ -101,355 +109,573 @@
     </section>
 
     <!-- ========================================
-         TECH STACK SECTION
+         ABOUT SECTION
     ======================================== -->
-    <section id="techstack" class="tech-stack">
+    <section id="about" class="about">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">Tech Stack</h2>
+                <h2 class="section-title" style="font-family: 'Fira Code', monospace; color: var(--text-primary);">aboutMe</h2>
             </div>
             
-            <div class="tech-grid">
-                <!-- Cloud Platforms -->
-                <div class="tech-item">
-                    <div class="tech-logo">
-                        <img src="images/microsoftAzure.png" alt="Microsoft Azure" width="120" height="120">
+            <!-- Terminal-style About Content -->
+            <div class="about-terminal">
+                <div class="terminal-header">
+                    <div class="terminal-controls">
+                        <span class="control close"></span>
+                        <span class="control minimize"></span>
+                        <span class="control maximize"></span>
                     </div>
-                    <span class="tech-name">Microsoft Azure</span>
+                    <span class="terminal-title">jim@devops:~$</span>
                 </div>
-
-                <div class="tech-item">
-                    <div class="tech-logo">
-                        <img src="images/aws.png" alt="Amazon Web Services" width="120" height="120">
+                
+                <div class="terminal-content">
+                    <div class="command-block">
+                        <span class="prompt">jim@devops:~$</span>
+                        <span class="command">cat about.txt</span>
                     </div>
-                    <span class="tech-name">AWS</span>
-                </div>
-
-                <!-- DevOps Tools -->
-                <div class="tech-item">
-                    <div class="tech-logo">
-                        <img src="images/azureDevops.png" alt="Azure DevOps" width="120" height="120">
+                    
+                    <div class="output-block">
+                        <p class="output-line">
+                            <span class="comment"># DevOps Engineer with 3+ years of experience</span>
+                        </p>
+                        <p class="output-line">
+                            <span class="string">"I automate stuff so no one has to click buttons manually"</span>
+                        </p>
+                        <p class="output-line">
+                            <span class="comment"># Currently at WTW, managing cloud systems & CI/CD</span>
+                        </p>
+                        <p class="output-line">
+                            <span class="string">"When something breaks in production, we all panic together"</span>
+                        </p>
                     </div>
-                    <span class="tech-name">Azure DevOps</span>
-                </div>
-
-                <div class="tech-item">
-                    <div class="tech-logo">
-                        <img src="images/terraform.png" alt="Terraform" width="120" height="120">
+                    
+                    <div class="command-block">
+                        <span class="prompt">jim@devops:~$</span>
+                        <span class="command">ls interests/</span>
                     </div>
-                    <span class="tech-name">Terraform</span>
-                </div>
-
-                <!-- Version Control -->
-                <div class="tech-item">
-                    <div class="tech-logo">
-                        <img src="images/git.png" alt="Git" width="120" height="120">
+                    
+                    <div class="output-block interests-grid">
+                        <div class="interest-item">
+                            <i class="fas fa-gamepad"></i>
+                            <span>dota2.exe</span>
+                        </div>
+                        <div class="interest-item">
+                            <i class="fas fa-flag-checkered"></i>
+                            <span>formula1.tv</span>
+                        </div>
+                        <div class="interest-item">
+                            <i class="fas fa-tv"></i>
+                            <span>netflix.app</span>
+                        </div>
+                        <div class="interest-item">
+                            <i class="fas fa-coffee"></i>
+                            <span>coffee.shop</span>
+                        </div>
+                        <div class="interest-item">
+                            <i class="fas fa-road"></i>
+                            <span>roadtrip.md</span>
+                        </div>
+                        <div class="interest-item">
+                            <i class="fas fa-plane"></i>
+                            <span>travel.log</span>
+                        </div>
                     </div>
-                    <span class="tech-name">Git</span>
-                </div>
-
-                <div class="tech-item">
-                    <div class="tech-logo">
-                        <img src="images/github.png" alt="GitHub" width="120" height="120">
+                    
+                    <div class="command-block">
+                        <span class="prompt">jim@devops:~$</span>
+                        <span class="command">cat stats.json</span>
                     </div>
-                    <span class="tech-name">GitHub</span>
-                </div>
-
-                <!-- Project Management -->
-                <div class="tech-item">
-                    <div class="tech-logo">
-                        <img src="images/jira.png" alt="Jira" width="120" height="120">
+                    
+                    <div class="output-block stats-json">
+                        <div class="json-content">
+                            <span class="json-bracket">{</span>
+                            <div class="json-property">
+                                <span class="json-key">"experience"</span><span class="json-colon">:</span> <span class="json-value">"3+ years"</span><span class="json-comma">,</span>
+                            </div>
+                            <div class="json-property">
+                                <span class="json-key">"certifications"</span><span class="json-colon">:</span> <span class="json-value">8</span><span class="json-comma">,</span>
+                            </div>
+                            <div class="json-property">
+                                <span class="json-key">"coffee_consumed"</span><span class="json-colon">:</span> <span class="json-value">"∞"</span>
+                            </div>
+                            <span class="json-bracket">}</span>
+                        </div>
                     </div>
-                    <span class="tech-name">Jira</span>
-                </div>
-
-                <div class="tech-item">
-                    <div class="tech-logo">
-                        <img src="images/confluence.png" alt="Confluence" width="120" height="120">
+                    
+                    <div class="command-block">
+                        <span class="prompt">jim@devops:~$</span>
+                        <span class="cursor">_</span>
                     </div>
-                    <span class="tech-name">Confluence</span>
-                </div>
-
-                <!-- Monitoring & Observability -->
-                <div class="tech-item">
-                    <div class="tech-logo">
-                        <img src="images/datadog.svg" alt="Datadog" width="120" height="120">
-                    </div>
-                    <span class="tech-name">Datadog</span>
-                </div>
-
-                <!-- Azure Kubernetes Services -->
-                <div class="tech-item">
-                    <div class="tech-logo">
-                        <img src="images/aks.png" alt="Azure Kubernetes Services" width="120" height="120">
-                    </div>
-                    <span class="tech-name">Azure Kubernetes Services</span>
-                </div>
-
-                <!-- Scripting & Configuration -->
-                <div class="tech-item">
-                    <div class="tech-logo">
-                        <img src="images/yaml.png" alt="YAML" width="120" height="120">
-                    </div>
-                    <span class="tech-name">YAML</span>
-                </div>
-
-                <div class="tech-item">
-                    <div class="tech-logo">
-                        <img src="images/powershell.png" alt="PowerShell" width="120" height="120">
-                    </div>
-                    <span class="tech-name">PowerShell</span>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- ========================================
-         ABOUT SECTION
+         TECH STACK SECTION
     ======================================== -->
-    <section id="about" class="about">
+    <section id="techstack" class="tech-stack">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">About Me</h2>
+                <h2 class="section-title" style="font-family: 'Fira Code', monospace; color: var(--text-primary);">techStack</h2>
             </div>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>
-                        I'm a DevOps Engineer with 3+ years of experience in DevOps, Cloud, and Software Development. I automate stuff so no one has to click buttons manually (you’re welcome). 
-                    </p>
-                    <p>
-                        Currently at WTW, I manage cloud systems, implement automation, and collaborate closely with QAs and Developers. 
-                        When something breaks in production, we all panic together.
-                    </p>
-                    <div class="hobbies">
-                        <h3>When I'm not coding...</h3>
-                        <ul class="hobbies-list">
-                            <li><i class="fas fa-gamepad" style="color: #ff6b6b;"></i> Playing Dota</li>
-                            <li><i class="fas fa-flag-checkered" style="color: #ed1c24;"></i> Watching F1</li>
-                            <li><i class="fas fa-tv" style="color: #e50914;"></i> Netflix series</li>
-                            <li><i class="fas fa-coffee" style="color: #6f4e37;"></i> Coffee hopping</li>
-                            <li><i class="fas fa-road" style="color: #4CAF50;"></i> Road trips</li>
-                            <li><i class="fas fa-plane" style="color: #2196F3;"></i> Travel</li>
-                        </ul>
+            
+            <!-- Terminal-style Tech Stack -->
+            <div class="tech-terminal">
+                <div class="terminal-header">
+                    <div class="terminal-controls">
+                        <span class="control close"></span>
+                        <span class="control minimize"></span>
+                        <span class="control maximize"></span>
                     </div>
+                    <span class="terminal-title">tech-stack.sh</span>
                 </div>
-                <!-- Statistics -->
-                <div class="about-stats">
-                    <div class="stat-card">
-                        <div class="stat-number">3+</div>
-                        <div class="stat-label">Years Experience</div>
+                
+                <div class="terminal-content">
+                    <!-- Cloud Platforms -->
+                    <div class="command-block">
+                        <span class="prompt">jim@devops:~$</span>
+                        <span class="command">ls cloud-platforms/</span>
                     </div>
-                    <div class="stat-card">
-                        <div class="stat-number">8</div>
-                        <div class="stat-label">Cloud Certifications</div>
+                    <div class="output-block tech-category">
+                        <div class="tech-row">
+                            <img src="images/microsoftAzure.png" alt="Microsoft Azure" class="tech-icon">
+                            <span class="tech-text">Microsoft Azure</span>
+                            <span class="tech-status">✓ active</span>
+                        </div>
+                        <div class="tech-row">
+                            <img src="images/aws.png" alt="AWS" class="tech-icon">
+                            <span class="tech-text">Amazon Web Services</span>
+                            <span class="tech-status">✓ active</span>
+                        </div>
                     </div>
-                    <div class="stat-card">
-                        <div class="stat-number">∞</div>
-                        <div class="stat-label">Coffee Cups Consumed</div>
+                    
+                    <!-- DevOps Tools -->
+                    <div class="command-block">
+                        <span class="prompt">jim@devops:~$</span>
+                        <span class="command">ls devops-tools/</span>
+                    </div>
+                    <div class="output-block tech-category">
+                        <div class="tech-row">
+                            <img src="images/azureDevops.png" alt="Azure DevOps" class="tech-icon">
+                            <span class="tech-text">Azure DevOps</span>
+                            <span class="tech-status">✓ active</span>
+                        </div>
+                        <div class="tech-row">
+                            <img src="images/terraform.png" alt="Terraform" class="tech-icon">
+                            <span class="tech-text">Terraform</span>
+                            <span class="tech-status">✓ active</span>
+                        </div>
+                        <div class="tech-row">
+                            <img src="images/aks.png" alt="Kubernetes" class="tech-icon">
+                            <span class="tech-text">Azure Kubernetes Services</span>
+                            <span class="tech-status">✓ active</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Version Control -->
+                    <div class="command-block">
+                        <span class="prompt">jim@devops:~$</span>
+                        <span class="command">ls version-control/</span>
+                    </div>
+                    <div class="output-block tech-category">
+                        <div class="tech-row">
+                            <img src="images/git.png" alt="Git" class="tech-icon">
+                            <span class="tech-text">Git</span>
+                            <span class="tech-status">✓ active</span>
+                        </div>
+                        <div class="tech-row">
+                            <img src="images/github.png" alt="GitHub" class="tech-icon">
+                            <span class="tech-text">GitHub</span>
+                            <span class="tech-status">✓ active</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Monitoring & Scripting -->
+                    <div class="command-block">
+                        <span class="prompt">jim@devops:~$</span>
+                        <span class="command">ls monitoring-scripting/</span>
+                    </div>
+                    <div class="output-block tech-category">
+                        <div class="tech-row">
+                            <img src="images/datadog.svg" alt="Datadog" class="tech-icon">
+                            <span class="tech-text">Datadog</span>
+                            <span class="tech-status">✓ active</span>
+                        </div>
+                        <div class="tech-row">
+                            <img src="images/yaml.png" alt="YAML" class="tech-icon">
+                            <span class="tech-text">YAML</span>
+                            <span class="tech-status">✓ active</span>
+                        </div>
+                        <div class="tech-row">
+                            <img src="images/powershell.png" alt="PowerShell" class="tech-icon">
+                            <span class="tech-text">PowerShell</span>
+                            <span class="tech-status">✓ active</span>
+                        </div>
+                    </div>
+                    
+                                        <!-- Project Management -->
+                    <div class="command-block">
+                        <span class="prompt">jim@devops:~$</span>
+                        <span class="command">ls project-management/</span>
+                    </div>
+                    <div class="output-block tech-category">
+                        <div class="tech-row">
+                            <img src="images/jira.png" alt="Jira" class="tech-icon">
+                            <span class="tech-text">Jira</span>
+                            <span class="tech-status">✓ active</span>
+                        </div>
+                        <div class="tech-row">
+                            <img src="images/confluence.png" alt="Confluence" class="tech-icon">
+                            <span class="tech-text">Confluence</span>
+                            <span class="tech-status">✓ active</span>
+                        </div>
+                    </div>
+                    <div class="command-block">
+                        <span class="prompt">jim@devops:~$</span>
+                        <span class="cursor">_</span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- ========================================
+         EXPERIENCE SECTION
+    ======================================== -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" style="font-family: 'Fira Code', monospace; color: var(--text-primary);">experience</h2>
+            </div>
+            
+            <!-- Terminal-style Experience -->
+            <div class="experience-terminal">
+                <div class="terminal-header">
+                    <div class="terminal-controls">
+                        <span class="control close"></span>
+                        <span class="control minimize"></span>
+                        <span class="control maximize"></span>
+                    </div>
+                    <span class="terminal-title">career-history.log</span>
+                </div>
+                
+                <div class="terminal-content">
+                    <!-- Current Position -->
+                    <div class="command-block">
+                        <span class="prompt">jim@devops:~$</span>
+                        <span class="command">cat current-position.json</span>
+                    </div>
+                    <div class="output-block job-entry">
+                        <div class="job-json">
+                            <span class="json-bracket">{</span>
+                            <div class="json-property">
+                                <span class="json-key">"company"</span><span class="json-colon">:</span> <span class="json-value">"WTW – Willis Towers Watson"</span><span class="json-comma">,</span>
+                            </div>
+                            <div class="json-property">
+                                <span class="json-key">"role"</span><span class="json-colon">:</span> <span class="json-value">"DevOps Engineer"</span><span class="json-comma">,</span>
+                            </div>
+                            <div class="json-property">
+                                <span class="json-key">"period"</span><span class="json-colon">:</span> <span class="json-value">"February 2025 - Present"</span><span class="json-comma">,</span>
+                            </div>
+                            <div class="json-property">
+                                <span class="json-key">"status"</span><span class="json-colon">:</span> <span class="json-value status-active">"🟢 active"</span><span class="json-comma">,</span>
+                            </div>
+                            <div class="json-property">
+                                <span class="json-key">"responsibilities"</span><span class="json-colon">:</span> <span class="json-array">[</span>
+                                <div class="json-array-item">"CI/CD pipelines & automated build/release processes"<span class="json-comma">,</span></div>
+                                <div class="json-array-item">"Monitoring solutions & deployment collaboration"<span class="json-comma">,</span></div>
+                                <div class="json-array-item">"Monthly backup/restore & quarterly SOC2 compliance"</div>
+                                <span class="json-array">]</span><span class="json-comma">,</span>
+                            </div>
+                            <div class="json-property">
+                                <span class="json-key">"tech_stack"</span><span class="json-colon">:</span> <span class="json-array">["Azure", "DevOps", "CI/CD", "IAAS", "PAAS" "Terraform", "Monitoring"]</span>
+                            </div>
+                            <span class="json-bracket">}</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Job History -->
+                    <div class="command-block">
+                        <span class="prompt">jim@devops:~$</span>
+                        <span class="command">git log --oneline --reverse career/</span>
+                    </div>
+                    <div class="output-block git-history">
+                        <div class="git-commit">
+                            <span class="git-hash">a1b2c3d</span>
+                            <span class="git-date">2022-05</span>
+                            <span class="git-message">Started as L1 Support Engineer Intern @ Adventus</span>
+                        </div>
+                        <div class="git-commit">
+                            <span class="git-hash">d4e5f6g</span>
+                            <span class="git-date">2022-10</span>
+                            <span class="git-message">Platform Support Associate @ Inchcape Digital</span>
+                        </div>
+                        <div class="git-commit">
+                            <span class="git-hash">h7i8j9k</span>
+                            <span class="git-date">2023-05</span>
+                            <span class="git-message">Junior Cloud Engineer @ QBE Insurance</span>
+                        </div>
+                        <div class="git-commit">
+                            <span class="git-hash">l0m1n2o</span>
+                            <span class="git-date">2024-06</span>
+                            <span class="git-message">Cloud Engineer @ DSV - Global Transport and Logistics</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Achievement Stats -->
+                    <div class="command-block">
+                        <span class="prompt">jim@devops:~$</span>
+                        <span class="command">wc -l achievements.txt</span>
+                    </div>
+                    <div class="output-block achievement-stats">
+                        <div class="stat-line">
+                            <span class="stat-number">2</span>
+                            <span class="stat-label">Automated Self-service Catalogs (DSV)</span>
+                        </div>
+                        <div class="stat-line">
+                            <span class="stat-number">Q1 2024</span>
+                            <span class="stat-label">Top Cloud Engineer Performer (QBE)</span>
+                        </div>
+                        <div class="stat-line">
+                            <span class="stat-number">1500+</span>
+                            <span class="stat-label">Azure Legacy VMs encrypted (QBE)</span>
+                        </div>
+                        <div class="stat-line">
+                            <span class="stat-number">500+</span>
+                            <span class="stat-label">Users supported during migration (Adventus)</span>
+                        </div>
+                    </div>
+                    
+                    <div class="command-block">
+                        <span class="prompt">jim@devops:~$</span>
+                        <span class="cursor">_</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
     <!-- ========================================
          CERTIFICATIONS SECTION
     ======================================== -->
     <section id="certifications" class="certifications">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">Certifications</h2>
+                <h2 class="section-title" style="font-family: 'Fira Code', monospace; color: var(--text-primary);">certifications</h2>
             </div>
             
-            <div class="certifications-grid">
-                <!-- Azure DevOps Engineer Expert -->
-                <div class="cert-item">
-                    <img src="https://images.credly.com/images/c3ab66f8-5d59-4afa-a6c2-0ba30a1989ca/CERT-Expert-DevOps-Engineer-600x600.png" alt="Azure DevOps Expert" width="180" height="180">
-                    <h3>Azure DevOps Engineer Expert</h3>
-                    <a href="https://learn.microsoft.com/api/credentials/share/en-us/jimuelSimounEligio0216/4633541946399435?sharingId=B51930B23B85836B" target="_blank" class="cert-verify">
-                        <i class="fas fa-external-link-alt"></i>
-                        Verify
-                    </a>
+            <!-- Terminal-style Certifications -->
+            <div class="certifications-terminal">
+                <div class="terminal-header">
+                    <div class="terminal-controls">
+                        <span class="control close"></span>
+                        <span class="control minimize"></span>
+                        <span class="control maximize"></span>
+                    </div>
+                    <span class="terminal-title">cert-manager.sh</span>
                 </div>
                 
-                <!-- Azure Solutions Architect Expert -->
-                <div class="cert-item">
-                    <img src="https://images.credly.com/size/425x425/images/987adb7e-49be-4e24-b67e-55986bd3fe66/azure-solutions-architect-expert-600x600.png" alt="Azure Solutions Architect Expert" width="180" height="180">
-                    <h3>Azure Solutions Architect Expert</h3>
-                    <a href="https://learn.microsoft.com/api/credentials/share/en-us/jimuelSimounEligio0216/F57A26708FDE9832?sharingId=B51930B23B85836B" target="_blank" class="cert-verify">
-                        <i class="fas fa-external-link-alt"></i>
-                        Verify
-                    </a>
-                </div>
-                
-                <!-- Azure Developer Associate -->
-                <div class="cert-item">
-                    <img src="https://images.credly.com/size/425x425/images/63316b60-f62d-4e51-aacc-c23cb850089c/azure-developer-associate-600x600.png" alt="Azure Developer Associate" width="180" height="180">
-                    <h3>Azure Developer Associate</h3>
-                    <a href="https://learn.microsoft.com/api/credentials/share/en-us/jimuelSimounEligio0216/9BB9ACD2A375AEA3?sharingId=B51930B23B85836B" target="_blank" class="cert-verify">
-                        <i class="fas fa-external-link-alt"></i>
-                        Verify
-                    </a>
-                </div>
-                
-                <!-- Azure Administrator Associate -->
-                <div class="cert-item">
-                    <img src="https://images.credly.com/size/425x425/images/336eebfc-0ac3-4553-9a67-b402f491f185/azure-administrator-associate-600x600.png" alt="Azure Administrator Associate" width="180" height="180">
-                    <h3>Azure Administrator Associate</h3>
-                    <a href="https://learn.microsoft.com/en-us/users/jimuelSimounEligio0216/credentials/B04E494D31BC4D50?ref=https%3A%2F%2Fwww.linkedin.com%2F" target="_blank" class="cert-verify">
-                        <i class="fas fa-external-link-alt"></i>
-                        Verify
-                    </a>
-                </div>
-                
-                <!-- Azure Security, Compliance & Identity -->
-                <div class="cert-item">
-                    <img src="https://images.credly.com/size/425x425/images/fc1352af-87fa-4947-ba54-398a0e63322e/security-compliance-and-identity-fundamentals-600x600.png" alt="Security Compliance Identity" width="180" height="180">
-                    <h3>Azure Security, Compliance & Identity</h3>
-                    <a href="https://learn.microsoft.com/api/credentials/share/en-us/jimuelSimounEligio0216/36521F55C23FEC74?sharingId=B51930B23B85836B" target="_blank" class="cert-verify">
-                        <i class="fas fa-external-link-alt"></i>
-                        Verify
-                    </a>
-                </div>
-                
-                <!-- Azure Fundamentals -->
-                <div class="cert-item">
-                    <img src="https://images.credly.com/size/425x425/images/be8fcaeb-c769-4858-b567-ffaaa73ce8cf/image.png" alt="Azure Fundamentals" width="180" height="180">
-                    <h3>Azure Fundamentals</h3>
-                    <a href="https://learn.microsoft.com/en-us/users/jimuelSimounEligio0216/credentials/EB22E16E2C3DEDF7?ref=https%3A%2F%2Fwww.linkedin.com%2F" target="_blank" class="cert-verify">
-                        <i class="fas fa-external-link-alt"></i>
-                        Verify
-                    </a>
-                </div>
-                
-                <!-- Azure Data Fundamentals -->
-                <div class="cert-item">
-                    <img src="https://images.credly.com/size/425x425/images/70eb1e3f-d4de-4377-a062-b20fb29594ea/azure-data-fundamentals-600x600.png" alt="Azure Data Fundamentals" width="180" height="180">
-                    <h3>Azure Data Fundamentals</h3>
-                    <a href="https://learn.microsoft.com/en-us/users/jimuelSimounEligio0216/credentials/460947C4D82E8D6E?ref=https%3A%2F%2Fwww.linkedin.com%2F" target="_blank" class="cert-verify">
-                        <i class="fas fa-external-link-alt"></i>
-                        Verify
-                    </a>
-                </div>
-                
-                <!-- AWS Cloud Practitioner -->
-                <div class="cert-item">
-                    <img src="https://images.credly.com/size/425x425/images/00634f82-b07f-4bbd-a6bb-53de397fc3a6/image.png" alt="AWS Cloud Practitioner" width="180" height="180">
-                    <h3>AWS Cloud Practitioner</h3>
-                    <a href="https://www.credly.com/badges/14cd9521-41d4-4d57-a8df-54cb8c62b8eb/linked_in_profile" target="_blank" class="cert-verify">
-                        <i class="fas fa-external-link-alt"></i>
-                        Verify
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Experience Section -->
-    <section id="experience" class="experience">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Experience</h2>
-            </div>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-date">February 2025 - Present</div>
-                        <h3>DevOps Engineer</h3>
-                        <h4>WTW – Willis Towers Watson</h4>
-                        <p>Develop and maintain CI/CD pipelines and automated build/release processes using Azure DevOps. 
-                        Set up and manage monitoring solutions and collaborate with development teams to streamline deployments. 
-                        Responsible for monthly backup/restore and quarterly SOC2 compliance reports.</p>
-                        <div class="tech-tags">
-                            <span class="tag">Azure</span>
-                            <span class="tag">DevOps</span>
-                            <span class="tag">CI/CD</span>
-                            <span class="tag">IAAS</span>
-                            <span class="tag">PAAS</span>
-                            <span class="tag">Deployment</span>
-                            <span class="tag">Terraform</span>
-                            <span class="tag">Monitoring</span>
-                            <span class="tag">SOC2</span>
+                <div class="terminal-content">
+                    <!-- Package Manager Style Installation -->
+                    <div class="command-block">
+                        <span class="prompt">jim@devops:~$</span>
+                        <span class="command">npm list --global @azure/certifications</span>
+                    </div>
+                    <div class="output-block cert-packages">
+                        <div class="package-tree">
+                            <div class="package-line">
+                                <span class="tree-icon">├──</span>
+                                <span class="package-name">@azure/devops-engineer-expert</span>
+                                <span class="version">@latest</span>
+                                <span class="status verified">✓</span>
+                            </div>
+                            <div class="package-line">
+                                <span class="tree-icon">├──</span>
+                                <span class="package-name">@azure/solutions-architect-expert</span>
+                                <span class="version">@latest</span>
+                                <span class="status verified">✓</span>
+                            </div>
+                            <div class="package-line">
+                                <span class="tree-icon">├──</span>
+                                <span class="package-name">@azure/developer-associate</span>
+                                <span class="version">@latest</span>
+                                <span class="status verified">✓</span>
+                            </div>
+                            <div class="package-line">
+                                <span class="tree-icon">├──</span>
+                                <span class="package-name">@azure/administrator-associate</span>
+                                <span class="version">@latest</span>
+                                <span class="status verified">✓</span>
+                            </div>
+                            <div class="package-line">
+                                <span class="tree-icon">├──</span>
+                                <span class="package-name">@azure/security-compliance-identity</span>
+                                <span class="version">@latest</span>
+                                <span class="status verified">✓</span>
+                            </div>
+                            <div class="package-line">
+                                <span class="tree-icon">├──</span>
+                                <span class="package-name">@azure/fundamentals</span>
+                                <span class="version">@latest</span>
+                                <span class="status verified">✓</span>
+                            </div>
+                            <div class="package-line">
+                                <span class="tree-icon">├──</span>
+                                <span class="package-name">@azure/data-fundamentals</span>
+                                <span class="version">@latest</span>
+                                <span class="status verified">✓</span>
+                            </div>
+                            <div class="package-line">
+                                <span class="tree-icon">└──</span>
+                                <span class="package-name">@aws/cloud-practitioner</span>
+                                <span class="version">@latest</span>
+                                <span class="status verified">✓</span>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-date">June 2024 - February 2025</div>
-                        <h3>Cloud Engineer</h3>
-                        <h4>DSV - Global Transport and Logistics</h4>
-                        <p>Developed and maintained Azure DevOps pipelines and Terraform scripts to provision Azure and AWS resources. 
-                        Collaborated with ITSM teams (CloudBolt & ServiceNow) to automate workflows and build Azure service catalogs. 
-                        Managed RBAC, networking, and compliance with Policy as Code.</p>
-                        <div class="tech-tags">
-                            <span class="tag">Azure</span>
-                            <span class="tag">DevOps</span>
-                            <span class="tag">CI/CD</span>
-                            <span class="tag">IAAS</span>
-                            <span class="tag">PAAS</span>
-                            <span class="tag">Terraform</span>
-                            <span class="tag">Catalog Integration</span>
+                    
+                    <!-- Certification Details -->
+                    <div class="command-block">
+                        <span class="prompt">jim@devops:~$</span>
+                        <span class="command">cat cert-details.json | jq '.expert_level[]'</span>
+                    </div>
+                    <div class="output-block cert-details">
+                        <div class="cert-entry expert">
+                            <div class="cert-header">
+                                <span class="cert-level">[EXPERT]</span>
+                                <span class="cert-title">Azure DevOps Engineer Expert</span>
+                            </div>
+                            <div class="cert-meta">
+                                <span class="cert-id">AZ-400</span>
+                                <a href="https://learn.microsoft.com/api/credentials/share/en-us/jimuelSimounEligio0216/4633541946399435?sharingId=B51930B23B85836B" target="_blank" class="cert-verify-link">🔗 verify</a>
+                            </div>
+                        </div>
+                        <div class="cert-entry expert">
+                            <div class="cert-header">
+                                <span class="cert-level">[EXPERT]</span>
+                                <span class="cert-title">Azure Solutions Architect Expert</span>
+                            </div>
+                            <div class="cert-meta">
+                                <span class="cert-id">AZ-305</span>
+                                <a href="https://learn.microsoft.com/api/credentials/share/en-us/jimuelSimounEligio0216/F57A26708FDE9832?sharingId=B51930B23B85836B" target="_blank" class="cert-verify-link">🔗 verify</a>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-date">May 2023 - June 2024</div>
-                        <h3>Junior Cloud Engineer</h3>
-                        <h4>QBE Insurance</h4>
-                        <p>Led cloud security initiatives, encrypting 1,500+ Azure VMs and ensuring compliance with industry standards. 
-                        Recognized as Q1 2024 Top Cloud Engineer Performer and conducted AZ-900 training for Service Desk teams. 
-                        Maintained Azure DevOps pipelines with Terraform and managed comprehensive security measures.</p>
-                        <div class="tech-tags">
-                            <span class="tag">Azure</span>
-                            <span class="tag">DevOps</span>
-                            <span class="tag">CI/CD</span>
-                            <span class="tag">IAAS</span>
-                            <span class="tag">PAAS</span>
-                            <span class="tag">Terraform</span>
-                            <span class="tag">SOC2</span>
-                            <span class="tag">IAM</span>
+                    
+                    <div class="command-block">
+                        <span class="prompt">jim@devops:~$</span>
+                        <span class="command">cat cert-details.json | jq '.associate_level[]'</span>
+                    </div>
+                    <div class="output-block cert-details">
+                        <div class="cert-entry associate">
+                            <div class="cert-header">
+                                <span class="cert-level">[ASSOCIATE]</span>
+                                <span class="cert-title">Azure Developer Associate</span>
+                            </div>
+                            <div class="cert-meta">
+                                <span class="cert-id">AZ-204</span>
+                                <a href="https://learn.microsoft.com/api/credentials/share/en-us/jimuelSimounEligio0216/9BB9ACD2A375AEA3?sharingId=B51930B23B85836B" target="_blank" class="cert-verify-link">🔗 verify</a>
+                            </div>
+                        </div>
+                        <div class="cert-entry associate">
+                            <div class="cert-header">
+                                <span class="cert-level">[ASSOCIATE]</span>
+                                <span class="cert-title">Azure Administrator Associate</span>
+                            </div>
+                            <div class="cert-meta">
+                                <span class="cert-id">AZ-104</span>
+                                <a href="https://learn.microsoft.com/en-us/users/jimuelSimounEligio0216/credentials/B04E494D31BC4D50?ref=https%3A%2F%2Fwww.linkedin.com%2F" target="_blank" class="cert-verify-link">🔗 verify</a>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-date">October 2022 - April 2023</div>
-                        <h3>Platform Support Associate</h3>
-                        <h4>Inchcape Digital</h4>
-                        <p>Focused on Microsoft Azure Cloud and DevOps while providing support and maintaining Network Cloud 
-                        Infrastructure as part of a 6-month Student Development Program. Collaborated with cross-functional teams 
-                        to troubleshoot and resolve Azure-related infrastructure issues efficiently.</p>
-                        <div class="tech-tags">
-                            <span class="tag">Azure</span>
-                            <span class="tag">DevOps</span>
-                            <span class="tag">CI/CD</span>
-                            <span class="tag">IAAS</span>
-                            <span class="tag">PAAS</span>
-                            <span class="tag">SOC2</span>
+                    
+                    <div class="command-block">
+                        <span class="prompt">jim@devops:~$</span>
+                        <span class="command">cat cert-details.json | jq '.fundamentals_level[]'</span>
+                    </div>
+                    <div class="output-block cert-details">
+                        <div class="cert-entry fundamentals">
+                            <div class="cert-header">
+                                <span class="cert-level">[FUNDAMENTALS]</span>
+                                <span class="cert-title">Azure Security, Compliance & Identity</span>
+                            </div>
+                            <div class="cert-meta">
+                                <span class="cert-id">SC-900</span>
+                                <a href="https://learn.microsoft.com/api/credentials/share/en-us/jimuelSimounEligio0216/36521F55C23FEC74?sharingId=B51930B23B85836B" target="_blank" class="cert-verify-link">🔗 verify</a>
+                            </div>
+                        </div>
+                        <div class="cert-entry fundamentals">
+                            <div class="cert-header">
+                                <span class="cert-level">[FUNDAMENTALS]</span>
+                                <span class="cert-title">Azure Fundamentals</span>
+                            </div>
+                            <div class="cert-meta">
+                                <span class="cert-id">AZ-900</span>
+                                <a href="https://learn.microsoft.com/en-us/users/jimuelSimounEligio0216/credentials/EB22E16E2C3DEDF7?ref=https%3A%2F%2Fwww.linkedin.com%2F" target="_blank" class="cert-verify-link">🔗 verify</a>
+                            </div>
+                        </div>
+                        <div class="cert-entry fundamentals">
+                            <div class="cert-header">
+                                <span class="cert-level">[FUNDAMENTALS]</span>
+                                <span class="cert-title">Azure Data Fundamentals</span>
+                            </div>
+                            <div class="cert-meta">
+                                <span class="cert-id">DP-900</span>
+                                <a href="https://learn.microsoft.com/en-us/users/jimuelSimounEligio0216/credentials/460947C4D82E8D6E?ref=https%3A%2F%2Fwww.linkedin.com%2F" target="_blank" class="cert-verify-link">🔗 verify</a>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-date">May 2022 - August 2022</div>
-                        <h3>L1 Support Engineer Intern</h3>
-                        <h4>Adventus</h4>
-                        <p>Provided technical support for Azure Cloud, Azure Defender, VM patching, Office 365, DUO Security, 
-                        and Active Directory, reducing downtime for 500+ users. Executed laptop migrations to Azure Cloud 
-                        and Microsoft 365, ensuring smooth transitions with no operational disruptions.</p>
-                        <div class="tech-tags">
-                            <span class="tag">Azure</span>
-                            <span class="tag">Azure Active Directory</span>
-                            <span class="tag">Office 365</span>
-                            <span class="tag">DUO Security</span>
-                            <span class="tag">Migration</span>
+                    
+                    <div class="command-block">
+                        <span class="prompt">jim@devops:~$</span>
+                        <span class="command">cat cert-details.json | jq '.aws_level[]'</span>
+                    </div>
+                    <div class="output-block cert-details">
+                        <div class="cert-entry aws">
+                            <div class="cert-header">
+                                <span class="cert-level">[AWS]</span>
+                                <span class="cert-title">AWS Cloud Practitioner</span>
+                            </div>
+                            <div class="cert-meta">
+                                <span class="cert-id">CLF-C01</span>
+                                <a href="https://www.credly.com/badges/14cd9521-41d4-4d57-a8df-54cb8c62b8eb/linked_in_profile" target="_blank" class="cert-verify-link">🔗 verify</a>
+                            </div>
                         </div>
+                    </div>
+                    
+                    <div class="command-block">
+                        <span class="prompt">jim@devops:~$</span>
+                        <span class="command">cert-stats --summary</span>
+                    </div>
+                    <div class="output-block cert-summary">
+                        <div class="summary-stats">
+                            <div class="stat-item">
+                                <span class="stat-label">Total Certifications:</span>
+                                <span class="stat-value">8</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-label">Azure Expert Level:</span>
+                                <span class="stat-value expert-count">2</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-label">Azure Associate Level:</span>
+                                <span class="stat-value associate-count">2</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-label">Azure Fundamentals:</span>
+                                <span class="stat-value fundamentals-count">3</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-label">AWS:</span>
+                                <span class="stat-value aws-count">1</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="command-block">
+                        <span class="prompt">jim@devops:~$</span>
+                        <span class="cursor">_</span>
                     </div>
                 </div>
             </div>
@@ -462,82 +688,86 @@
     <section id="contact" class="contact">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">Get In Touch</h2>
+                <h2 class="section-title" style="font-family: 'Fira Code', monospace; color: var(--text-primary);">getInTouch</h2>
             </div>
             
-            <div class="contact-content">
-                <!-- Contact Information -->
-                <div class="contact-info">
-                    <h3>Let's Connect</h3>
-                    <p>Not looking right now, but my resume enjoys the attention.</p>
-                    
-                    <div class="contact-items">
-                        <div class="contact-item">
-                            <i class="fas fa-envelope"></i>
-                            <div>
-                                <span>Email</span>
-                                <a href="mailto:jimueleligio@gmail.com">jimueleligio@gmail.com</a>
-                            </div>
-                        </div>
-                        
-                        <div class="contact-item">
-                            <i class="fas fa-phone"></i>
-                            <div>
-                                <span>Phone</span>
-                                <a href="tel:+639567328806">(+63) 956-732-8806</a>
-                            </div>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fab fa-linkedin"></i>
-                            <div>
-                                <span>LinkedIn</span>
-                                <a href="https://linkedin.com/in/jimseligio" target="_blank">linkedin.com/in/jimseligio</a>
-                            </div>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fab fa-github"></i>
-                            <div>
-                                <span>Portfolio</span>
-                                <a href="https://jsleligio.github.io/portfolio" target="_blank">jsleligio.github.io/portfolio</a>
-                            </div>
-                        </div>
-                        
-                        <div class="contact-item">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <div>
-                                <span>Location</span>
-                                <span>Bulacan, Philippines</span>
-                            </div>
-                        </div>
+            <div class="contact-terminal">
+                <div class="terminal-header">
+                    <div class="terminal-controls">
+                        <span class="control close"></span>
+                        <span class="control minimize"></span>
+                        <span class="control maximize"></span>
                     </div>
+                    <span class="terminal-title">message-composer.sh</span>
                 </div>
                 
-                <!-- Contact Form -->
-                <div class="contact-form">
-                    <h3>Slide Into My Inbox</h3>
-                    <p>Whether it’s bugs, builds, or bad jokes,  I’m all ears.</p>
-                    <form action="https://formspree.io/f/xblkgrqd" method="POST">
-                        <div class="form-group">
-                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                <div class="terminal-content" style="font-family: 'Fira Code', monospace;">
+                    <div class="command-block">
+                        <span class="prompt">jim@devops:~$</span>
+                        <span class="command">nano new-message.txt</span>
+                    </div>
+                    
+                    <div class="output-block">
+                        <div class="terminal-editor">
+                            <div class="editor-header">
+                                <span class="editor-info">GNU nano 6.2</span>
+                                <span class="file-path">~/messages/new-message.txt</span>
+                            </div>
+                            <form id="contact-form" onsubmit="submitForm(event)">
+                                <div class="editor-content">
+                                    <div class="editor-line">
+                                        <span class="line-number">1</span>
+                                        <span class="field-label">From:</span>
+                                        <input type="text" id="name" name="name" placeholder="Your Name" required class="terminal-input">
+                                    </div>
+                                    <div class="editor-line">
+                                        <span class="line-number">2</span>
+                                        <span class="field-label">Email:</span>
+                                        <input type="email" id="email" name="email" placeholder="your.email@domain.com" required class="terminal-input">
+                                    </div>
+                                    <div class="editor-line">
+                                        <span class="line-number">3</span>
+                                        <span class="field-label">Subject:</span>
+                                        <input type="text" id="subject" name="subject" placeholder="Message Subject" required class="terminal-input">
+                                    </div>
+                                    <div class="editor-line">
+                                        <span class="line-number">4</span>
+                                        <span class="field-label">---</span>
+                                    </div>
+                                    <div class="editor-line message-area">
+                                        <span class="line-number">5</span>
+                                        <textarea id="message" name="message" rows="6" placeholder="Your message content here..." required class="terminal-textarea"></textarea>
+                                    </div>
+                                </div>
+                                <div class="editor-footer">
+                                    <div class="editor-shortcuts">
+                                        <span class="shortcut">^X Exit</span>
+                                        <span class="shortcut">^O Write Out</span>
+                                        <span class="shortcut">^R Read File</span>
+                                    </div>
+                                </div>
+                                <div class="command-block">
+                                    <span class="prompt">jim@devops:~$</span>
+                                    <button type="submit" class="terminal-submit">
+                                        <span class="command">sendmail < new-message.txt</span>
+                                    </button>
+                                </div>
+                            </form>
                         </div>
-                        
-                        <div class="form-group">
-                            <input type="email" id="email" name="email" placeholder="Your Email" required>
-                        </div>
-                        
-                        <div class="form-group">
-                            <input type="text" id="subject" name="subject" placeholder="Subject" required>
-                        </div>
-                        
-                        <div class="form-group">
-                            <textarea id="message" name="message" rows="6" placeholder="Your Message" required></textarea>
-                        </div>
-                        
-                        <button type="submit" class="btn btn-primary">
-                            <i class="fas fa-paper-plane"></i>
-                            Send Message
-                        </button>
-                    </form>
+                    </div>
+                    
+                    <div id="contact-success" class="command-block contact-success-message" style="display:none; margin-top:1rem;">
+                        <span class="prompt">jim@devops:~$</span>
+                        <span class="command">echo "Message sent successfully!"</span>
+                    </div>
+                    <div id="contact-error" class="command-block contact-error-message" style="display:none; margin-top:1rem;">
+                        <span class="prompt">jim@devops:~$</span>
+                        <span class="command">echo "Failed to send the message. Please try again."</span>
+                    </div>
+                    <div class="command-block">
+                        <span class="prompt">jim@devops:~$</span>
+                        <span class="cursor">_</span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -548,19 +778,35 @@
     ======================================== -->
     <footer class="footer">
         <div class="container">
-            <div class="footer-content">
-                <p>&copy; 2025 Jim Eligio. All rights reserved.</p>
+            <div class="footer-terminal">
+                <div class="terminal-header">
+                    <div class="terminal-controls">
+                        <span class="control close"></span>
+                        <span class="control minimize"></span>
+                        <span class="control maximize"></span>
+                    </div>
+                    <span class="terminal-title">footer.sh</span>
+                </div>
                 
-                <div class="social-links">
-                    <a href="https://jsleligio.github.io/portfolio" aria-label="Portfolio" target="_blank">
-                        <i class="fas fa-globe"></i>
-                    </a>
-                    <a href="https://linkedin.com/in/jimseligio" aria-label="LinkedIn" target="_blank">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                    <a href="mailto:jimueleligio@gmail.com" aria-label="Email">
-                        <i class="fas fa-envelope"></i>
-                    </a>
+                <div class="terminal-content">
+                    <div class="footer-content-minimal">
+                        <div class="footer-info">
+                            <span class="prompt">jim@devops:~$</span>
+                            <span class="comment">&copy; 2025 Jim Eligio</span>
+                        </div>
+                        
+                        <div class="social-links-minimal">
+                            <a href="https://jsleligio.github.io/portfolio" aria-label="Portfolio" target="_blank">
+                                <i class="fas fa-globe"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/jimsleligio/" aria-label="LinkedIn" target="_blank">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a href="mailto:jimueleligio@gmail.com" aria-label="Email">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -568,5 +814,42 @@
 
     <!-- Scripts -->
     <script src="script.js"></script>
+    <script>
+        async function submitForm(event) {
+            event.preventDefault();
+            const form = document.getElementById('contact-form');
+            const formData = new FormData(form);
+            const successMessage = document.getElementById('contact-success');
+            const errorMessage = document.getElementById('contact-error');
+
+            try {
+                const response = await fetch('https://formspree.io/f/xblkgrqd', {
+                    method: 'POST',
+                    body: formData,
+                    headers: {
+                        'Accept': 'application/json'
+                    }
+                });
+
+                if (response.ok) {
+                    successMessage.style.display = 'block';
+                    errorMessage.style.display = 'none';
+                    form.reset();
+                } else {
+                    throw new Error('Form submission failed');
+                }
+            } catch (error) {
+                successMessage.style.display = 'none';
+                errorMessage.style.display = 'block';
+            }
+
+            setTimeout(() => {
+                successMessage.style.display = 'none';
+                errorMessage.style.display = 'none';
+            }, 3000);
+        }
+    </script>
+
+
 </body>
 </html>

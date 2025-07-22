@@ -1,3 +1,36 @@
+// Terminal-style contact form AJAX handler
+document.addEventListener('DOMContentLoaded', function() {
+  const contactForm = document.querySelector('.contact-form-terminal form');
+  const successMsg = document.getElementById('contact-success');
+  if (contactForm) {
+    contactForm.addEventListener('submit', function(e) {
+      e.preventDefault();
+      const formData = new FormData(contactForm);
+      fetch(contactForm.action, {
+        method: 'POST',
+        body: formData,
+        headers: {
+          'Accept': 'application/json'
+        }
+      })
+      .then(response => {
+        if (response.ok) {
+          contactForm.reset();
+          if (successMsg) {
+            successMsg.style.display = 'block';
+          }
+        } else {
+          response.json().then(data => {
+            alert(data.error || 'Message failed to send.');
+          });
+        }
+      })
+      .catch(() => {
+        alert('Message failed to send.');
+      });
+    });
+  }
+});
 /**
  * ========================================
  * PORTFOLIO JAVASCRIPT - 2025 EDITION

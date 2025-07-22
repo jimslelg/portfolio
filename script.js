@@ -80,7 +80,11 @@ class PortfolioApp {
         if (!typingElement) return;
 
         const texts = [
-            "Hello, I'm Jim!",
+            "Boss???",
+            "Boss???",
+            "Bossing!!!",
+            "Kumusta ang buhay-buhay?",
+            "aray kohhh"
         ];
         
         let textIndex = 0;

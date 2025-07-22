@@ -318,17 +318,24 @@ class PortfolioApp {
     }
 
     async simulateFormSubmission(formData) {
-        // Simulate API call
-        return new Promise((resolve, reject) => {
-            setTimeout(() => {
-                // Simulate success (90% chance)
-                if (Math.random() > 0.1) {
-                    resolve('Success');
-                } else {
-                    reject('Network error');
+        // Replace with actual Formspree submission
+        try {
+            const response = await fetch('https://formspree.io/f/xblkgrqd', {
+                method: 'POST',
+                body: formData,
+                headers: {
+                    'Accept': 'application/json'
                 }
-            }, 2000);
-        });
+            });
+
+            if (response.ok) {
+                return 'Success';
+            } else {
+                throw new Error('Form submission failed');
+            }
+        } catch (error) {
+            throw new Error('Network error: ' + error.message);
+        }
     }
 
     showNotification(message, type = 'info') {

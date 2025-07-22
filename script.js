@@ -80,7 +80,7 @@ class PortfolioApp {
         if (!typingElement) return;
 
         const texts = [
-            "Hello, I'm Jim Eligio",
+            "Hello, I'm Jim!",
         ];
         
         let textIndex = 0;

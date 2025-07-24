@@ -41,6 +41,7 @@
   --spacing-xl: 2rem;
   --spacing-2xl: 3rem;
   --spacing-3xl: 4rem;
+  --spacing-4xl: 5rem;
   
   /* Border Radius */
   --radius-sm: 6px;
@@ -218,7 +219,7 @@ a:hover {
 }
 
 .hero-container {
-  max-width: 1200px;
+  max-width: 1400px; /* Increased to accommodate larger visual */
   margin: 0 auto;
   padding: 0 var(--spacing-lg);
   width: 100%;
@@ -226,8 +227,8 @@ a:hover {
 
 .hero-content {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: var(--spacing-3xl);
+  grid-template-columns: 1fr 1.2fr; /* Give more space to the visual side */
+  gap: var(--spacing-4xl); /* Increased gap for better spacing */
   align-items: center;
 }
 
@@ -337,6 +338,56 @@ a:hover {
   font-family: var(--font-family-mono);
   font-size: 0.9rem;
   color: var(--text-secondary);
+}
+
+/* Hero Visual */
+.hero-visual {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 650px; /* Increased from default 500px */
+}
+
+.hero-visual .code-window {
+  width: 100%;
+  max-width: 650px; /* Make the code window larger */
+  transform: scale(1.1); /* Scale up by 10% for more visual impact */
+}
+
+.hero-visual .code-content {
+  padding: var(--spacing-xl);
+  font-family: var(--font-family-mono);
+  font-size: 1rem; /* Increased from 0.9rem for better readability */
+  line-height: 1.5; /* Increased line height for better spacing */
+}
+
+/* Responsive scaling for hero-visual */
+@media (max-width: 1200px) {
+  .hero-visual .code-window {
+    transform: scale(1.05); /* Slightly smaller on medium screens */
+    max-width: 550px;
+  }
+}
+
+@media (max-width: 992px) {
+  .hero-visual .code-window {
+    transform: scale(1); /* Normal size on tablet screens */
+    max-width: 500px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-visual .code-window {
+    transform: scale(1); /* Normal size on mobile */
+    max-width: 100%;
+  }
+  
+  .hero-visual .code-content {
+    padding: var(--spacing-sm);
+    font-size: 0.75rem;
+    line-height: 1.4;
+  }
 }
 
 .code-content {

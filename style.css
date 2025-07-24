@@ -346,7 +346,7 @@ a:hover {
   justify-content: center;
   align-items: center;
   width: 100%;
-  max-width: 650px; /* Increased from default 500px */
+  max-width: 650px; /* Increased from default 500px  */
 }
 
 .hero-visual .code-window {

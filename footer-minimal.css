@@ -1,4 +1,4 @@
-/* Minimal Footer Override */
+Minimal Footer Override
 .footer {
   background: var(--bg-primary) !important;
   padding: var(--spacing-md) 0 !important;

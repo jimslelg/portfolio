@@ -17,6 +17,19 @@
     <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
     
+    <!-- Smooth Scrolling Styles -->
+    <style>
+        /* Enable smooth scrolling globally */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Custom scroll offset for fixed navbar */
+        section {
+            scroll-margin-top: 80px; /* Adjust based on navbar height */
+        }
+    </style>
+    
     <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-6XR9BMRQZJ"></script>
     <script>
@@ -93,7 +106,7 @@
                                 <span class="control minimize"></span>
                                 <span class="control maximize"></span>
                             </div>
-                            <!-- <span class="window-title">myPortfolio.js</span> -->
+                            <span class="window-title">sheesh.js</span>
                         </div>
                         
                         <div class="code-content">
@@ -134,28 +147,28 @@
                 
                 <div class="terminal-content">
                     <div class="command-block">
-                        <span class="prompt">jim@devops:~$</span>
-                        <span class="command">cat about.txt</span>
+                        <span class="prompt" style="color: #4CAF50;">jim@devops:~$</span>
+                        <span class="command" style="color: #2196F3;">cat about.txt</span>
                     </div>
                     
                     <div class="output-block">
                         <p class="output-line">
-                            <span class="comment"># Automating chaos since ’22</span>
+                            <span class="comment"># Automating cloud stuff since ’22</span>
                         </p>
                         <p class="output-line">
-                            <span class="string">"I automate the boring stuff so you don’t have to rage-click."</span>
+                            <span class="string">"Less clicking, more coding - I automate that."</span>
                         </p>
                         <p class="output-line">
-                            <span class="comment"># Currently managing (and occasionally breaking) cloud infra & CI/CD at WTW</span>
+                            <span class="comment"># Managing cloud, CI/CD & deployments at WTW</span>
                         </p>
                         <p class="output-line">
-                            <span class="string">"If it’s not broken, chances are I didn’t deploy it... probably."</span>
+                            <span class="string">"If it deployed clean, I had a hand in it."</span>
                         </p>
                     </div>
                     
                     <div class="command-block">
-                        <span class="prompt">jim@devops:~$</span>
-                        <span class="command">ls interests/</span>
+                        <span class="prompt" style="color: #4CAF50;">jim@devops:~$</span>
+                        <span class="command" style="color: #2196F3;">ls interests/</span>
                     </div>
                     
                     <div class="output-block interests-grid">
@@ -186,51 +199,28 @@
                     </div>
                     
                     <div class="command-block">
-                        <span class="prompt">jim@devops:~$</span>
-                        <span class="command">cat stats.json</span>
+                        <span class="prompt" style="color: #4CAF50;">jim@devops:~$</span>
+                        <span class="command" style="color: #2196F3;">cat stats.json</span>
                     </div>
                     
                     <div class="output-block stats-json">
                         <div class="json-content">
                             <span class="json-bracket">{</span>
                             <div class="json-property">
-                                <span class="json-key">"experience"</span><span class="json-colon">:</span> <span class="json-value">"3+ years"</span><span class="json-comma">,</span>
+                                <span class="json-key" style="color: #4CAF50;">"experience"</span><span class="json-colon">:</span> <span class="json-value" style="color: #2196F3;">"3+ years"</span><span class="json-comma">,</span>
                             </div>
                             <div class="json-property">
-                                <span class="json-key">"certifications"</span><span class="json-colon">:</span> <span class="json-value">8</span><span class="json-comma">,</span>
+                                <span class="json-key" style="color: #4CAF50;">"certifications"</span><span class="json-colon">:</span> <span class="json-value" style="color: #2196F3;">8</span><span class="json-comma">,</span>
                             </div>
                             <div class="json-property">
-                                <span class="json-key">"education"</span><span class="json-colon">:</span> <span class="json-value">"PUP - Computer Engineering Technology"</span><span class="json-comma">,</span>
-                            </div>
-                            <div class="json-property">
-                                <span class="json-key">"coffee_consumed"</span><span class="json-colon">:</span> <span class="json-value">"∞"</span>
+                                <span class="json-key" style="color: #4CAF50;">"coffee_consumed"</span><span class="json-colon">:</span> <span class="json-value" style="color: #2196F3;">"∞"</span>
                             </div>
                             <span class="json-bracket">}</span>
                         </div>
                     </div>
                     
                     <div class="command-block">
-                        <span class="prompt">jim@devops:~$</span>
-                        <span class="command">cat education.txt</span>
-                    </div>
-                    
-                    <div class="output-block">
-                        <p class="output-line">
-                            <span class="comment"># Education Background</span>
-                        </p>
-                        <p class="output-line">
-                            <span class="string">"Graduated from Polytechnic University of the Philippines"</span>
-                        </p>
-                        <p class="output-line">
-                            <span class="string">"Diploma in Computer Engineering Technology"</span>
-                        </p>
-                        <p class="output-line">
-                            <span class="comment"># Building the bridge between hardware and software since day one</span>
-                        </p>
-                    </div>
-                    
-                    <div class="command-block">
-                        <span class="prompt">jim@devops:~$</span>
+                        <span class="prompt" style="color: #4CAF50;">jim@devops:~$</span>
                         <span class="cursor">_</span>
                     </div>
                 </div>
@@ -855,6 +845,29 @@
     <!-- Scripts -->
     <script src="script.js"></script>
     <script>
+        // Simple smooth scrolling for navigation links
+        document.addEventListener('DOMContentLoaded', function() {
+            const navLinks = document.querySelectorAll('.nav-link[href^="#"]');
+            
+            navLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    
+                    const targetId = this.getAttribute('href');
+                    const targetSection = document.querySelector(targetId);
+                    
+                    if (targetSection) {
+                        const offsetTop = targetSection.offsetTop - 80; // Account for navbar height
+                        
+                        window.scrollTo({
+                            top: offsetTop,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+        });
+
         async function submitForm(event) {
             event.preventDefault();
             const form = document.getElementById('contact-form');

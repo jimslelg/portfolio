@@ -1,4 +1,4 @@
-# Jim Simoun Eligio 👨‍💻
+# Jim Eligio 👨‍💻
 
 **DevOps Engineer | Cloud Engineer | 8x Certified (7x Azure + 1x AWS)**
 

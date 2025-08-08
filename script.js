@@ -123,11 +123,10 @@ class PortfolioApp {
         if (!typingElement) return;
 
         const texts = [
-            "Boss???",
-            "Boss???",
-            "Bossing!!!",
-            "Kumusta ang buhay-buhay?",
-            "aray kohhh"
+            "Hey, I'm Jim!",
+            "DevOps Engineer.",
+            "I build pipelines.",
+            "I manage clouds."
         ];
         
         let textIndex = 0;

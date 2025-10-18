@@ -6,7 +6,7 @@
 **Phone:** (+63) 956-732-8806  
 **Location:** Bulacan, Philippines  
 **LinkedIn:** [linkedin.com/in/jimsleligio](https://linkedin.com/in/jimsleligio)  
-**Portfolio:** [jsleligio.github.io/portfolio](https://jimslelg.github.io/portfolio)
+**Portfolio:** [jimslelg.github.io/portfolio](https://jimslelg.github.io/portfolio)
 
 ---
 

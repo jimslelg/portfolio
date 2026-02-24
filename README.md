@@ -43,20 +43,9 @@ Azure Cloud & DevOps Engineer with 3+ years of experience automating cloud infra
 
 ## Work Experience
 
-### **Willis Towers Watson (WTW)**  
-*Taguig City, Manila* | *Feb 2025 – Present*  
-**DevOps Engineer**
-
-- Managed Azure DevOps CI/CD pipelines and Terraform for 6 environments, cutting release times by 40% using Release Orchestrator and UAT LPT pipelines.
--	Led SOC 2 compliance for backups, restores, and quarterly reporting, ensuring 100% audit readiness.
--	Implemented monitoring and alerting using Datadog, Azure Monitor, App Insights, and Log Analytics, reducing incident response time by 30%.
--	Partnered with developers and QA teams to streamline automated monthly releases across Azure PaaS workloads.
-
----
-
 ### **DSV – Global Transport and Logistics**  
-*Paranaque City, Manila* | *June 2024 – Feb 2025*  
-**Cloud Engineer**
+*Paranaque City, Manila* | *June 2024 – Present*  
+**DevOps Engineer**
 
 -	Automated provisioning for 50+ Azure PaaS resources via Terraform and ADO pipelines.
 -	Integrated CloudBolt and ServiceNow to automate ITSM workflows, shortening service request turnaround.
